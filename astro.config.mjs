@@ -7,6 +7,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://polskabezglutenu.pl',
   vite: {
     plugins: [tailwindcss()]
   },
