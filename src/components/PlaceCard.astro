@@ -1,0 +1,129 @@
+---
+export interface Props {
+    nazwa: string;
+    opis: string;
+    miejscowość: string;
+    adres: string;
+    www?: string;
+    'tylko-bezglutenowe': string;
+    kategorie?: string[];
+    id: string;
+}
+
+const {
+    nazwa,
+    opis,
+    miejscowość,
+    adres,
+    www,
+    'tylko-bezglutenowe': tylkoBezglutenowe,
+    kategorie = []
+} = Astro.props;
+
+// Format description paragraphs
+const opisParagraphs = opis.trim().length > 300
+    ? [`${opis.trim().slice(0, 300)}...`]
+    : opis.trim().split('\n\n');
+
+// Ensure URL has protocol
+const formatUrl = (url: string) => {
+    if (!url) return '';
+    return url.startsWith('http') ? url : `https://${url}`;
+};
+
+const formattedWww = www ? formatUrl(www) : '';
+---
+
+<article class="place-card">
+    <h2>{nazwa}</h2>
+    {kategorie.length > 0 && (
+        <div class="categories">
+            {kategorie.map(kategoria => (
+                <span class="category">{kategoria}</span>
+            ))}
+        </div>
+    )}
+    <div class="description">
+        {opisParagraphs.map(paragraph => (
+            <p>{paragraph.trim()}</p>
+        ))}
+    </div>
+    <div class="details">
+        <p><strong>Miejscowość:</strong> {miejscowość}</p>
+        <p><strong>Adres:</strong> {adres}</p>
+        {www && (
+            <p>
+                <strong>WWW:</strong>
+                <a href={formattedWww} target="_blank" rel="noopener noreferrer">{www}</a>
+            </p>
+        )}
+        <p>
+            <strong>Tylko bezglutenowe:</strong>
+            {tylkoBezglutenowe}
+        </p>
+    </div>
+</article>
+
+<style>
+    .place-card {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .place-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .place-card h2 {
+        margin: 0 0 1rem 0;
+        color: #2563eb;
+    }
+
+    .description {
+        color: #666;
+        margin-bottom: 1rem;
+    }
+
+    .description p {
+        margin-bottom: 1rem;
+    }
+
+    .description p:last-child {
+        margin-bottom: 0;
+    }
+
+    .details {
+        font-size: 0.9rem;
+    }
+
+    .details p {
+        margin: 0.5rem 0;
+    }
+
+    a {
+        color: #2563eb;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .categories {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .category {
+        background: #e5e7eb;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+        color: #4b5563;
+    }
+</style>

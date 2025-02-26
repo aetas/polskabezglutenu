@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PlaceCard from '../components/PlaceCard.astro';
+import yaml from 'js-yaml';
+import fs from 'fs';
+import path from 'path';
+
+const daneDir = 'dane';
+const places = [];
+
+try {
+	const files = fs.readdirSync(daneDir).filter(file => file.endsWith('.yaml'));
+	console.log(`[DEBUG_LOG] Found ${files.length} YAML files in ${daneDir} directory`);
+
+	for (const file of files) {
+		try {
+			const filePath = path.join(daneDir, file);
+			const content = fs.readFileSync(filePath, 'utf8');
+			const data = yaml.load(content);
+			console.log(`[DEBUG_LOG] Successfully loaded ${file}: ${data.nazwa}`);
+			places.push({ ...data, id: file.replace('.yaml', '') });
+		} catch (error) {
+			console.error(`[DEBUG_LOG] Error processing file ${file}:`, error);
+		}
+	}
+} catch (error) {
+	console.error(`[DEBUG_LOG] Error reading directory ${daneDir}:`, error);
+}
+---
+
+<Layout title="Lista Miejsc">
+	<main class="container">
+		<h1>Lista Miejsc</h1>
+		<div class="places-grid">
+			{places.map(place => (
+				<PlaceCard key={place.id} {...place} />
+			))}
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2rem;
+	}
+
+	h1 {
+		text-align: center;
+		margin-bottom: 2rem;
+		color: #333;
+	}
+
+	.places-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+</style>

@@ -1,0 +1,14 @@
+nazwa: Czerwona Koza
+opis: |
+  Restauracja Lokalna serwująca pyszne dania kuchni polskiej oraz regionalnej. Dania przyrządzane są ze świeżych składników kupowanych codziennie. W ofercie dania kuchni domowej, kuchni bez mlecznej, bez jajecznej, bezglutenowej, vege i wegan.
+
+kategorie:
+#  - piekarnia
+#  - cukiernia
+  - restauracja
+#  - sklep
+#  - inne
+miejscowość: Wrocław
+adres: ul. Braniborska 48, Wrocław
+www: https://www.facebook.com/profile.php?id=61568777837905
+tylko-bezglutenowe: tak
