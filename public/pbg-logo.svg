@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="155.5999mm"
+   height="95.600212mm"
+   viewBox="0 0 155.5999 95.600212"
+   version="1.1"
+   id="svg5"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-41.929193,-55.357287)">
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:38.1px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Light';word-spacing:0px;fill:#000000;stroke:#000000;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3;stroke-opacity:0.973881"
+       x="119.26405"
+       y="47.102562"
+       id="text236"><tspan
+         sodipodi:role="line"
+         id="tspan234"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Permanent Marker';-inkscape-font-specification:'Permanent Marker';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#333333;stroke:#000000;stroke-width:1.6;stroke-opacity:0"
+         x="119.26405"
+         y="47.102562"
+         dy="36.959999"
+         dx="-0.059999999">Polska</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Permanent Marker';-inkscape-font-specification:'Permanent Marker';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#333333;stroke:#000000;stroke-width:1.6;stroke-opacity:0"
+         x="119.26405"
+         y="98.202148"
+         id="tspan238"
+         dy="20.98">Bez</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Permanent Marker';-inkscape-font-specification:'Permanent Marker';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#333333;stroke:#000000;stroke-width:1.6;stroke-opacity:0"
+         x="119.26405"
+         y="149.30174"
+         id="tspan240"
+         dy="0 0 0 0 0 0 0">Glutenu</tspan></text>
+  </g>
+</svg>

@@ -38,15 +38,17 @@ const formattedWww = www ? formatUrl(www) : '';
 ---
 
 <Card>
-    <CardHeader>
-        <CardTitle>{nazwa}</CardTitle>
+    <CardHeader className="flex flex-col gap-2">
         {kategorie.length > 0 && (
             <div class="flex flex-wrap gap-2">
                 {kategorie.map(kategoria => (
-                    <Badge variant="default">{kategoria}</Badge>
+                    <Badge variant="outline">{kategoria}</Badge>
                 ))}
             </div>
         )}
+        <CardTitle className="font-bold text-xl mt-2">
+            {nazwa}
+        </CardTitle>
     </CardHeader>
     <CardContent>
         <div class="space-y-4">
