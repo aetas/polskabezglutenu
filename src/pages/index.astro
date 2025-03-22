@@ -1,4 +1,5 @@
 ---
+import '@/styles/globals.css'
 import Layout from '../layouts/Layout.astro';
 import PlaceCard from '../components/PlaceCard.astro';
 import yaml from 'js-yaml';
@@ -28,33 +29,21 @@ try {
 }
 ---
 
-<Layout title="Lista Miejsc">
-	<main class="container">
-		<h1>Lista Miejsc</h1>
-		<div class="places-grid">
+<Layout
+	title="Polska Bez Glutenu - Lista Miejsc"
+	description="Lista miejsc przyjaznych osobom na diecie bezglutenowej w Polsce. Restauracje, kawiarnie, piekarnie i inne lokale z ofertą bezglutenową."
+>
+	<main class="container mx-auto px-4 py-8 md:px-8">
+		<h1 class="mb-8 text-center text-4xl font-bold tracking-tight text-foreground">
+			Polska Bez Glutenu
+		</h1>
+		<p class="mb-8 text-center text-lg text-muted-foreground">
+			Lista miejsc przyjaznych osobom na diecie bezglutenowej
+		</p>
+		<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 			{places.map(place => (
-				<PlaceCard key={place.id} {...place} />
+				<PlaceCard {...place} />
 			))}
 		</div>
 	</main>
 </Layout>
-
-<style>
-	.container {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 2rem;
-	}
-
-	h1 {
-		text-align: center;
-		margin-bottom: 2rem;
-		color: #333;
-	}
-
-	.places-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		gap: 2rem;
-	}
-</style>

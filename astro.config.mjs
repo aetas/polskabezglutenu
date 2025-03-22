@@ -1,18 +1,15 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-
-import tailwindcss from '@tailwindcss/vite';
-
 import react from '@astrojs/react';
+import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://polskabezglutenu.pl',
-  vite: {
-    plugins: [tailwindcss()]
-  },
-
   integrations: [
-      react(),
-  ]
+    react(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+  ],
 });

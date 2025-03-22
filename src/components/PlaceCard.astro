@@ -1,4 +1,7 @@
 ---
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+
 export interface Props {
     nazwa: string;
     opis: string;
@@ -34,96 +37,38 @@ const formatUrl = (url: string) => {
 const formattedWww = www ? formatUrl(www) : '';
 ---
 
-<article class="place-card">
-    <h2>{nazwa}</h2>
-    {kategorie.length > 0 && (
-        <div class="categories">
-            {kategorie.map(kategoria => (
-                <span class="category">{kategoria}</span>
-            ))}
-        </div>
-    )}
-    <div class="description">
-        {opisParagraphs.map(paragraph => (
-            <p>{paragraph.trim()}</p>
-        ))}
-    </div>
-    <div class="details">
-        <p><strong>Miejscowość:</strong> {miejscowość}</p>
-        <p><strong>Adres:</strong> {adres}</p>
-        {www && (
-            <p>
-                <strong>WWW:</strong>
-                <a href={formattedWww} target="_blank" rel="noopener noreferrer">{www}</a>
-            </p>
+<Card>
+    <CardHeader>
+        <CardTitle>{nazwa}</CardTitle>
+        {kategorie.length > 0 && (
+            <div class="flex flex-wrap gap-2">
+                {kategorie.map(kategoria => (
+                    <Badge variant="default">{kategoria}</Badge>
+                ))}
+            </div>
         )}
-        <p>
-            <strong>Tylko bezglutenowe:</strong>
-            {tylkoBezglutenowe}
-        </p>
-    </div>
-</article>
-
-<style>
-    .place-card {
-        background: white;
-        border-radius: 10px;
-        padding: 1.5rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .place-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .place-card h2 {
-        margin: 0 0 1rem 0;
-        color: #2563eb;
-    }
-
-    .description {
-        color: #666;
-        margin-bottom: 1rem;
-    }
-
-    .description p {
-        margin-bottom: 1rem;
-    }
-
-    .description p:last-child {
-        margin-bottom: 0;
-    }
-
-    .details {
-        font-size: 0.9rem;
-    }
-
-    .details p {
-        margin: 0.5rem 0;
-    }
-
-    a {
-        color: #2563eb;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    .categories {
-        display: flex;
-        gap: 0.5rem;
-        margin-bottom: 1rem;
-        flex-wrap: wrap;
-    }
-
-    .category {
-        background: #e5e7eb;
-        padding: 0.25rem 0.75rem;
-        border-radius: 9999px;
-        font-size: 0.875rem;
-        color: #4b5563;
-    }
-</style>
+    </CardHeader>
+    <CardContent>
+        <div class="space-y-4">
+            <div class="text-muted-foreground">
+                {opisParagraphs.map(paragraph => (
+                    <p class="mb-4 last:mb-0">{paragraph.trim()}</p>
+                ))}
+            </div>
+            <div class="space-y-2 text-sm">
+                <p><span class="font-semibold">Miejscowość:</span> {miejscowość}</p>
+                <p><span class="font-semibold">Adres:</span> {adres}</p>
+                {www && (
+                    <p>
+                        <span class="font-semibold">WWW:</span>
+                        <a href={formattedWww} target="_blank" rel="noopener noreferrer" class="ml-1 text-primary hover:underline">{www}</a>
+                    </p>
+                )}
+                <p>
+                    <span class="font-semibold">Tylko bezglutenowe:</span>
+                    <span class="ml-1">{tylkoBezglutenowe}</span>
+                </p>
+            </div>
+        </div>
+    </CardContent>
+</Card>

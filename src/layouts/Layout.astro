@@ -1,22 +1,27 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Polska Bez Glutenu - Miejsca przyjazne osobom na diecie bezglutenowej" } = Astro.props;
+
+import '../styles/globals.css';
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
+	<body class="min-h-screen bg-background font-sans antialiased">
+		<main class="relative flex min-h-screen flex-col">
+			<slot />
+		</main>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
