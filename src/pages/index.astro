@@ -1,32 +1,11 @@
 ---
 import '@/styles/globals.css'
 import Layout from '../layouts/Layout.astro';
-import PlaceCard from '../components/PlaceCard.astro';
-import yaml from 'js-yaml';
-import fs from 'fs';
-import path from 'path';
+import {Filter} from '../components/Filter';
+import {FilteredPlacesList} from '../components/FilteredPlacesList';
+import {loadData} from "../lib/data-loader";
 
-const daneDir = 'dane';
-const places = [];
-
-try {
-    const files = fs.readdirSync(daneDir).filter(file => file.endsWith('.yaml'));
-    console.log(`[DEBUG_LOG] Found ${files.length} YAML files in ${daneDir} directory`);
-
-    for (const file of files) {
-        try {
-            const filePath = path.join(daneDir, file);
-            const content = fs.readFileSync(filePath, 'utf8');
-            const data = yaml.load(content);
-            console.log(`[DEBUG_LOG] Successfully loaded ${file}: ${data.nazwa}`);
-            places.push({...data, id: file.replace('.yaml', '')});
-        } catch (error) {
-            console.error(`[DEBUG_LOG] Error processing file ${file}:`, error);
-        }
-    }
-} catch (error) {
-    console.error(`[DEBUG_LOG] Error reading directory ${daneDir}:`, error);
-}
+const places = loadData();
 ---
 
 <Layout
@@ -37,18 +16,19 @@ try {
         <div class="mb-16 flex flex-row flex-wrap items-center md:gap-20 pl-2 justify-center md:justify-start">
             <div class="mb-4 md:mb-0 tracking-tight text-foreground">
                 <a href="/">
-                <img src="/pbg-logo.svg" class="inline-block h-20"
-                     alt="Logo"/>
+                    <img src="/pbg-logo.svg" class="inline-block h-20"
+                         alt="Logo"/>
                 </a>
             </div>
             <p class="text-center text-lg text-muted-foreground">
                 Lista miejsc przyjaznych osobom na diecie bezglutenowej
             </p>
         </div>
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {places.map(place => (
-                    <PlaceCard {...place}/>
-            ))}
+        <div>
+            <FilteredPlacesList
+                    client:visible
+                    places={places}
+            />
         </div>
     </main>
 </Layout>
