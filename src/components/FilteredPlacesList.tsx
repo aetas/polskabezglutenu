@@ -29,12 +29,6 @@ export function FilteredPlacesList({places}: FilteredPlacesListProps) {
         setSelectedCategory(filters.category);
         setSelectedCity(filters.city);
         setIsGlutenFree(filters.glutenFree);
-        console.log('[DEBUG_LOG] Filters updated:', {
-            searchQuery,
-            selectedCategory,
-            selectedCity,
-            isGlutenFree
-        })
     }
 
     const filteredPlaces = places.filter(place => {
@@ -54,19 +48,7 @@ export function FilteredPlacesList({places}: FilteredPlacesListProps) {
         const matchesGlutenFree = !isGlutenFree ||
             place.glutenFreeOnly;
 
-        const matches = matchesSearch && matchesCategory && matchesCity && matchesGlutenFree;
-
-        if (!matches) {
-            console.log(`[DEBUG_LOG] Place filtered out:`, {
-                nazwa: place.name,
-                searchMatch: matchesSearch,
-                categoryMatch: matchesCategory,
-                cityMatch: matchesCity,
-                glutenFreeMatch: matchesGlutenFree
-            });
-        }
-
-        return matches;
+        return matchesSearch && matchesCategory && matchesCity && matchesGlutenFree;
     });
 
     const totalPlaces = places.length;
