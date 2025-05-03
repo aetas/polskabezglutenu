@@ -1,9 +1,5 @@
 nazwa: Hert
 opis: |
-  Nasza internetowa piekarnia bezglutenowa to miejsce, gdzie dbamy o jakość żywności bezglutenowej, 
-  spełniając normy wymagane podczas tworzenia produktów dla alergików. Nasze pieczywo bezglutenowe 
-  jest starannie przygotowywane, aby uniknąć kontaminacji. Pieczywo bez glutenu jest równie smaczne i 
-  aromatyczne, jak tradycyjne wypieki, ale jest w pełni bezpieczne dla osób chorujących na celiakię. 
 kategorie:
   - piekarnia
   - cukiernia
@@ -11,6 +7,6 @@ kategorie:
   - sklep
 #  - inne
 miejscowość: Jelcz-Laskowice
-adres: ul. Wrocławska 6, 55-220 Jelcz-Laskowice
+adres: ul. Wrocławska 6, Jelcz-Laskowice
 www: https://bezglutenowyhert.pl
 tylko-bezglutenowe: nie

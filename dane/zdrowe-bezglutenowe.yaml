@@ -1,6 +1,5 @@
 nazwa: Zdrowe bezglutenowe
 opis: |
-   
 kategorie:
   - piekarnia
 #  - cukiernia
@@ -8,6 +7,6 @@ kategorie:
 #  - sklep
 #  - inne
 miejscowość: Wrocław
-adres: ul. Sułowska 22c, 51-180 Wrocław
+adres: ul. Sułowska 22c, Wrocław
 www: https://www.zdrowebezglutenowe.pl
 tylko-bezglutenowe: tak 
