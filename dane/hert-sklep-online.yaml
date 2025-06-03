@@ -1,12 +1,12 @@
 nazwa: Hert
-opis: |
+opis: ''
 kategorie:
   - piekarnia
   - cukiernia
-#  - restauracja
   - sklep
-#  - inne
 miejscowość: Jelcz-Laskowice
 adres: ul. Wrocławska 6, Jelcz-Laskowice
 www: https://bezglutenowyhert.pl
 tylko-bezglutenowe: nie
+lat: 51.02383415
+lng: 17.31410894089936

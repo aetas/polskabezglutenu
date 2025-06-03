@@ -1,5 +1,5 @@
 nazwa: Kawiarnia Sorrir Superfood Wrocław
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - kawiarnia
@@ -7,3 +7,5 @@ miejscowość: Wrocław
 adres: ul. Kotlarska 25, Wrocław
 www: http://sorrir.pl/wroclaw/
 tylko-bezglutenowe: tak
+lat: 51.1119359
+lng: 17.032538

@@ -1,5 +1,5 @@
 nazwa: Ostoja Garden
-opis: |
+opis: ''
 kategorie:
   - restauracja
   - hotel
@@ -7,3 +7,5 @@ miejscowość: Brody
 adres: Brody 677, Brody
 www: https://www.ostojagarden.pl/
 tylko-bezglutenowe: nie
+lat: 49.86928377701736
+lng: 19.723200424374806

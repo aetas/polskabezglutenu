@@ -1,5 +1,5 @@
 nazwa: Ciacho bez cukru
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - kawiarnia
@@ -7,3 +7,5 @@ miejscowość: Szczecin
 adres: ul. Plac Lotników 3B, Szczecin
 www: https://www.facebook.com/CiachoBezCukruSzczecin
 tylko-bezglutenowe: tak
+lat: 53.4301815
+lng: 14.5519832

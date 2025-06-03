@@ -21,6 +21,8 @@ export function loadData(): Place[] {
             url: data.www as string,
             glutenFreeOnly: data['tylko-bezglutenowe'] === "tak",
             categories: (data.kategorie as string[]).map(cat => cat.toString()),
+            lat: data.lat as number,
+            lng: data.lng as number,
         };
     });
 }

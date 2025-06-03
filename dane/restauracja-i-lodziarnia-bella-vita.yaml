@@ -1,5 +1,5 @@
 nazwa: Restauracja i lodziarnia Bella Vita
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - restauracja
@@ -7,3 +7,5 @@ miejscowość: Białystok
 adres: ul. Rynek Kościuszki 22, Białystok
 www: https://bellavita.pl/
 tylko-bezglutenowe: nie
+lat: 53.1327071
+lng: 23.1586015

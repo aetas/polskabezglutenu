@@ -1,5 +1,5 @@
 nazwa: Ciacho bez cukru
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - kawiarnia
@@ -7,3 +7,5 @@ miejscowość: Radom
 adres: ul. Chrobrego 22, Radom
 www: https://www.facebook.com/ciachobezcukruradom/
 tylko-bezglutenowe: tak
+lat: 51.4078531
+lng: 21.1579687

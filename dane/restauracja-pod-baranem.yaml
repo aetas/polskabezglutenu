@@ -1,8 +1,10 @@
 nazwa: Restauracja Pod Baranem
-opis: |
+opis: ''
 kategorie:
   - restauracja
 miejscowość: Kraków
 adres: ul. Św. Gertrudy 21, Kraków
 www: http://podbaranem.com/
 tylko-bezglutenowe: nie
+lat: 50.0547876
+lng: 19.9401577

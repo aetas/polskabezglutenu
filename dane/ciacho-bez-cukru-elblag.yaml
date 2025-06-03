@@ -1,5 +1,5 @@
 nazwa: Ciacho bez cukru
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - kawiarnia
@@ -7,3 +7,5 @@ miejscowość: Elbląg
 adres: ul.Bednarska 19A, Elbląg
 www: https://www.facebook.com/ciachobezcukruelblag?locale=pl_PL
 tylko-bezglutenowe: tak
+lat: 54.1594362
+lng: 19.3943175

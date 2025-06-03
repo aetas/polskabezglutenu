@@ -1,5 +1,5 @@
 nazwa: Ciacho bez cukru
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - kawiarnia
@@ -7,3 +7,5 @@ miejscowość: Lublin
 adres: ul. Koralowa 16, Lublin
 www: https://www.facebook.com/ciachobezcukru
 tylko-bezglutenowe: tak
+lat: 51.2242455
+lng: 22.4853887

@@ -1,8 +1,10 @@
 nazwa: Restauracja Kassandra
-opis: |
+opis: ''
 kategorie:
   - restauracja
 miejscowość: Rybnik
 adres: ul. Porucznika Kazimierza Ogrodowskiego 23, Rybnik
 www: http://www.restauracjakassandra.pl/
 tylko-bezglutenowe: nie
+lat: 50.0917542
+lng: 18.581496157182485

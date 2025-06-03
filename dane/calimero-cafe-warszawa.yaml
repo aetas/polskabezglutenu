@@ -1,5 +1,5 @@
 nazwa: Calimero Café
-opis: |
+opis: ''
 kategorie:
   - kawiarnia
   - cukiernia
@@ -8,3 +8,5 @@ miejscowość: Warszawa
 adres: ul. Konstruktorska 7/U1, Warszawa
 www: https://calimerocafe.pl/
 tylko-bezglutenowe: nie
+lat: 52.1855127
+lng: 20.9951356

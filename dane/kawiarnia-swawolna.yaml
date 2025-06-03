@@ -1,5 +1,5 @@
 nazwa: Kawiarnia Swawolna
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - restauracja
@@ -8,3 +8,5 @@ miejscowość: Toruń
 adres: ul. Legionów 28c/1, Toruń
 www: https://swawolna.pl/
 tylko-bezglutenowe: tak
+lat: 53.0334865
+lng: 18.6001513

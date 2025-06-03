@@ -1,5 +1,5 @@
 nazwa: Zakręcona Kawiarenka
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - kawiarnia
@@ -7,3 +7,5 @@ miejscowość: Kraków
 adres: ul. Trynitarska 6, Kraków
 www: https://zakreconakawiarenka.pl/
 tylko-bezglutenowe: tak
+lat: 50.0477123
+lng: 19.9448363

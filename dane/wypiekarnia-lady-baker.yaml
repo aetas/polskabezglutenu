@@ -1,5 +1,5 @@
 nazwa: Wypiekarnia Lady Baker
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - piekarnia
@@ -7,3 +7,5 @@ miejscowość: Szczecin
 adres: ul. Śląska 40/2, Szczecin
 www: http://www.ladybaker.pl
 tylko-bezglutenowe: tak
+lat: 53.4307505
+lng: 14.5474261

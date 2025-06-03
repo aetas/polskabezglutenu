@@ -1,12 +1,10 @@
 nazwa: Czerwona Koza
-opis: |
+opis: ''
 kategorie:
-#  - piekarnia
-#  - cukiernia
   - restauracja
-#  - sklep
-#  - inne
 miejscowość: Wrocław
 adres: ul. Braniborska 48, Wrocław
 www: https://www.facebook.com/profile.php?id=61568777837905
 tylko-bezglutenowe: tak
+lat: 51.1111727
+lng: 17.0110141

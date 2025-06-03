@@ -1,5 +1,5 @@
 nazwa: Restauracja Mesa
-opis: |
+opis: ''
 kategorie:
   - restauracja
   - hotel
@@ -7,3 +7,5 @@ miejscowość: Dźwirzyno
 adres: ul. Wyzwolenia 4J, Dźwirzyno
 www: https://mesa.pl/
 tylko-bezglutenowe: tak
+lat: 54.158062349999994
+lng: 15.394192797100054

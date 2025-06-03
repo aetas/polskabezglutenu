@@ -1,5 +1,5 @@
 nazwa: Hotel i Restauracja Kaukaska
-opis: |
+opis: ''
 kategorie:
   - restauracja
   - hotel
@@ -7,3 +7,5 @@ miejscowość: Wolsztyn
 adres: ul. Poniatowskiego 19, Wolsztyn
 www: http://www.kaukaska.pl/
 tylko-bezglutenowe: nie
+lat: 52.11151715
+lng: 16.10052695

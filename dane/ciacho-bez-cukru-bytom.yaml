@@ -1,5 +1,5 @@
 nazwa: Ciacho bez cukru
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - kawiarnia
@@ -7,3 +7,5 @@ miejscowość: Bytom
 adres: ul. Józefczaka 2, Bytom
 www: https://www.facebook.com/ciachobezcukru.bytom?locale=pl_PL
 tylko-bezglutenowe: tak
+lat: 50.3469839
+lng: 18.9201814

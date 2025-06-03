@@ -1,13 +1,10 @@
-nazwa: Fit Cake Wrocław Stare Miasto 
-opis: |
-   
+nazwa: Fit Cake Wrocław Stare Miasto
+opis: ''
 kategorie:
-#  - piekarnia
   - cukiernia
-#  - restauracja
-#  - sklep
-#  - inne
 miejscowość: Wrocław
 adres: ul. Piłsudskiego 89a, Wrocław
 www: https://fitcake.pl/miasta/wroclaw/
 tylko-bezglutenowe: tak
+lat: 51.1003884
+lng: 17.0331424

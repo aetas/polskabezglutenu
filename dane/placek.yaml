@@ -1,8 +1,10 @@
 nazwa: Placek
-opis: |
+opis: ''
 kategorie:
   - restauracja
 miejscowość: Katowice
 adres: ul. Dworcowa 8, Katowice
 www: http://www.placek.katowice.pl/
 tylko-bezglutenowe: tak
+lat: 50.2572987
+lng: 19.022582

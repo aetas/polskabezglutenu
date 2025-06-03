@@ -1,5 +1,5 @@
 nazwa: Hotel Crocus
-opis: |
+opis: ''
 kategorie:
   - restauracja
   - hotel
@@ -7,3 +7,5 @@ miejscowość: Zakopane
 adres: ul. Chałubińskiego 40, Zakopane
 www: https://hotelcrocus.pl/hotel
 tylko-bezglutenowe: nie
+lat: 49.2860884
+lng: 19.971520152993357

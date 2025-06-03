@@ -1,5 +1,5 @@
 nazwa: Calimero Café
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - kawiarnia
@@ -7,3 +7,5 @@ miejscowość: Kielce
 adres: ul. Solna 4, Kielce
 www: http://www.calimerocafe.pl/
 tylko-bezglutenowe: nie
+lat: 50.8708278
+lng: 20.6239027

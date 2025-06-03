@@ -1,5 +1,5 @@
 nazwa: Podwieczorek Bez Glutenu
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - kawiarnia
@@ -7,3 +7,5 @@ miejscowość: Poznań
 adres: ul. Chełmońskiego 5, Poznań
 www: https://www.facebook.com/podwieczorekbezglutenu/
 tylko-bezglutenowe: tak
+lat: 52.2304379
+lng: 16.8262964

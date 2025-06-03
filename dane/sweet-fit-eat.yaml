@@ -1,5 +1,5 @@
 nazwa: Sweet Fit & Eat
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - kawiarnia
@@ -7,3 +7,5 @@ miejscowość: Białystok
 adres: ul. Legionowa 30/6, Białystok
 www: https://sweet-fit.pl/
 tylko-bezglutenowe: tak
+lat: 53.1282975
+lng: 23.1524125

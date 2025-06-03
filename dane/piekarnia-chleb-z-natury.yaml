@@ -1,5 +1,5 @@
 nazwa: Piekarnia Chleb z natury
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - piekarnia
@@ -7,3 +7,5 @@ miejscowość: Gdańsk
 adres: ul. Klonowa 1, Gdańsk
 www: https://chlebznatury.pl/o-nas
 tylko-bezglutenowe: tak
+lat: 54.3808087
+lng: 18.6043574

@@ -1,5 +1,5 @@
 nazwa: Hotel Pod Jedlami
-opis: |
+opis: ''
 kategorie:
   - hotel
   - restauracja
@@ -7,3 +7,5 @@ miejscowość: Wisła
 adres: ul. Beskidzka 17, Wisła
 www: http://www.podjedlami.pl/
 tylko-bezglutenowe: nie
+lat: 49.6521805
+lng: 18.8720375

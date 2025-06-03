@@ -1,5 +1,5 @@
 nazwa: Wypiekarnia Smaku
-opis: |
+opis: ''
 kategorie:
   - piekarnia
   - restauracja
@@ -8,3 +8,5 @@ miejscowość: Przeźmierowo
 adres: ul. Kościelna 32, Przeźmierowo
 www: https://pl-pl.facebook.com/PracowniaWypiekarniaSmaku/
 tylko-bezglutenowe: tak
+lat: 52.4264023
+lng: 16.787982833977427

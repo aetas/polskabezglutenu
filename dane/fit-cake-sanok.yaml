@@ -1,5 +1,5 @@
 nazwa: Fit Cake Sanok
-opis: |
+opis: ''
 kategorie:
   - cukiernia
   - kawiarnia
@@ -7,3 +7,5 @@ miejscowość: Sanok
 adres: ul. Grzegorza z Sanoka 3, Sanok
 www: https://www.facebook.com/FitCakeSanok
 tylko-bezglutenowe: tak
+lat: 49.5604197
+lng: 22.2048411

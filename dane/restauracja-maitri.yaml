@@ -1,8 +1,10 @@
 nazwa: Restauracja Maitri
-opis: |
+opis: ''
 kategorie:
   - restauracja
 miejscowość: Poznań
 adres: ul. Garbary 54, Poznań
 www: https://maitri.net.pl/
 tylko-bezglutenowe: tak
+lat: 52.4073496
+lng: 16.9380317

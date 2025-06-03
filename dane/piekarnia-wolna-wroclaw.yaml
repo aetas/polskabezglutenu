@@ -1,12 +1,11 @@
 nazwa: WOLNA - piekarnia bezglutenowa
-opis: |
+opis: ''
 kategorie:
   - piekarnia
   - cukiernia
-#  - restauracja
-#  - sklep
-#  - inne
 miejscowość: Wrocław
 adres: ul. Nowowiejska 13, Wrocław
 www: wolnapiekarnia.pl
 tylko-bezglutenowe: tak
+lat: 51.1238957
+lng: 17.0474149

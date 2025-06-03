@@ -1,5 +1,5 @@
 nazwa: Restauracja Kulisy w Hotelu Falcon
-opis: |
+opis: ''
 kategorie:
   - restauracja
   - hotel
@@ -7,3 +7,5 @@ miejscowość: Rzeszów
 adres: ul. Jastrzębia 29, Rzeszów
 www: http://www.hotelfalcon.pl/
 tylko-bezglutenowe: nie
+lat: 50.0556613
+lng: 21.98399392485876

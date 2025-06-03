@@ -1,8 +1,10 @@
 nazwa: Wiesz co Zjesz
-opis: |
+opis: ''
 kategorie:
   - restauracja
 miejscowość: Warszawa
 adres: Pl. Konstytucji 1, Warszawa
 www: http://www.wieszcozjesz.pl/
 tylko-bezglutenowe: tak
+lat: 52.2213883
+lng: 21.0164138
