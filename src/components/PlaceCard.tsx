@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ExternalLink } from "lucide-react"
 
 export interface PlaceCardProps {
     name: string;
@@ -60,7 +61,15 @@ export function PlaceCard({
                         {url && (
                             <p>
                                 <span className="font-semibold">WWW:</span>
-                                <a href={formattedWww} target="_blank" rel="noopener noreferrer" className="ml-1 text-primary hover:underline">{url}</a>
+                                <a
+                                    href={formattedWww}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="ml-1 text-primary hover:underline inline-flex items-center gap-1 rounded"
+                                >
+                                    <span>Link</span>
+                                    <ExternalLink size={16} />
+                                </a>
                             </p>
                         )}
                         <p>
