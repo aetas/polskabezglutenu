@@ -5,7 +5,11 @@ Rejestr miejsc z produktami bezglutenowymi, przyjaznych dla celiaków.
 
 ## Jak dodać nowe miejsce?
 
-Dodaj plik do folderu `/dane`. 
+Wypełnij [formularz dodawania nowego miejsca](https://github.com/aetas/polskabezglutenu/issues/new?template=new-place.yml).
+
+## Jak zgłosić problem z danymi na stronie
+
+Wypełnij [formularz zgłaszania problemu z danymi](https://github.com/aetas/polskabezglutenu/issues/new?template=data-problem.yml).
 
 ## Development
 

@@ -1,0 +1,80 @@
+name: Problem z danymi miejsca
+description: Zgłoś problem z danymi miejsca bezglutenowego na mapie
+title: "[Problem z miejscem]: "
+labels: ["data-problem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za zgłoszenie problemu z danymi miejsca bezglutenowego! Prosimy o wypełnienie poniższego formularza.
+
+  - type: input
+    id: nazwa
+    attributes:
+      label: Nazwa miejsca
+      description: Nazwa miejsca, którego dotyczy problem
+      placeholder: np. A'Favela
+    validations:
+      required: true
+
+  - type: dropdown
+    id: typ-problemu
+    attributes:
+      label: Typ problemu
+      description: Wybierz typ problemu z danymi
+      multiple: true
+      options:
+        - Niepoprawna nazwa
+        - Niepoprawny opis
+        - Niepoprawne kategorie
+        - Niepoprawna miejscowość
+        - Niepoprawny adres
+        - Niepoprawna strona internetowa
+        - Niepoprawna informacja o bezglutenowości
+        - Niepoprawne współrzędne geograficzne
+        - Miejsce już nie istnieje
+        - Miejsce nie oferuje już opcji bezglutenowych
+        - Inne
+    validations:
+      required: true
+
+  - type: textarea
+    id: opis-problemu
+    attributes:
+      label: Opis problemu
+      description: Opisz dokładnie, na czym polega problem z danymi
+      placeholder: np. Adres jest niepoprawny, prawidłowy to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: poprawne-dane
+    attributes:
+      label: Poprawne dane
+      description: Podaj poprawne dane, jeśli je znasz
+      placeholder: np. Poprawny adres to Plac Wolności 8, Bydgoszcz
+    validations:
+      required: false
+
+  - type: input
+    id: zrodlo
+    attributes:
+      label: Źródło informacji
+      description: Skąd wiesz o problemie? (np. własne doświadczenie, strona internetowa miejsca)
+      placeholder: np. Byłem/am tam osobiście, informacja ze strony internetowej
+    validations:
+      required: false
+
+  - type: textarea
+    id: dodatkowe-informacje
+    attributes:
+      label: Dodatkowe informacje
+      description: Miejsce na dodatkowe informacje, uwagi lub sugestie
+      placeholder: Tutaj możesz dodać dowolne dodatkowe informacje...
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za wypełnienie formularza! Twoje zgłoszenie zostanie zweryfikowane i dane zostaną zaktualizowane.

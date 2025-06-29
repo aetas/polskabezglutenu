@@ -1,0 +1,114 @@
+name: Nowe miejsce bezglutenowe
+description: Zgłoś nowe miejsce bezglutenowe do dodania na mapę
+title: "[Nowe miejsce]: "
+labels: ["new-place"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za zgłoszenie nowego miejsca bezglutenowego! Prosimy o wypełnienie poniższego formularza.
+
+  - type: input
+    id: nazwa
+    attributes:
+      label: Nazwa
+      description: Nazwa miejsca
+      placeholder: np. A'Favela
+    validations:
+      required: true
+
+  - type: textarea
+    id: opis
+    attributes:
+      label: Opis
+      description: Krótki opis miejsca (opcjonalnie)
+      placeholder: Opisz to miejsce w kilku słowach...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: kategorie
+    attributes:
+      label: Kategorie
+      description: Wybierz kategorie, które najlepiej opisują to miejsce
+      multiple: true
+      options:
+        - restauracja
+        - kawiarnia
+        - piekarnia
+        - cukiernia
+        - sklep
+        - hotel
+        - inne
+    validations:
+      required: true
+
+  - type: input
+    id: miejscowosc
+    attributes:
+      label: Miejscowość
+      description: Miejscowość, w której znajduje się to miejsce
+      placeholder: np. Bydgoszcz
+    validations:
+      required: true
+
+  - type: input
+    id: adres
+    attributes:
+      label: Adres
+      description: Pełny adres miejsca
+      placeholder: np. Plac Wolności 7, Bydgoszcz
+    validations:
+      required: true
+
+  - type: input
+    id: www
+    attributes:
+      label: Strona internetowa
+      description: Link do strony internetowej lub profilu w mediach społecznościowych
+      placeholder: np. https://afavela.pl/restaurants/afavela
+    validations:
+      required: false
+
+  - type: dropdown
+    id: tylko-bezglutenowe
+    attributes:
+      label: Tylko bezglutenowe
+      description: Czy miejsce oferuje wyłącznie produkty bezglutenowe?
+      options:
+        - tak
+        - nie
+    validations:
+      required: true
+
+  - type: input
+    id: lat
+    attributes:
+      label: Szerokość geograficzna (latitude)
+      description: Szerokość geograficzna miejsca (opcjonalnie, możemy uzupełnić)
+      placeholder: np. 53.1273286
+    validations:
+      required: false
+
+  - type: input
+    id: lng
+    attributes:
+      label: Długość geograficzna (longitude)
+      description: Długość geograficzna miejsca (opcjonalnie, możemy uzupełnić)
+      placeholder: np. 18.0066158
+    validations:
+      required: false
+
+  - type: textarea
+    id: komentarz
+    attributes:
+      label: Dodatkowy komentarz
+      description: Miejsce na dodatkowe informacje, uwagi lub sugestie
+      placeholder: Tutaj możesz dodać dowolne dodatkowe informacje...
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za wypełnienie formularza! Twoje zgłoszenie zostanie zweryfikowane i dodane do mapy.

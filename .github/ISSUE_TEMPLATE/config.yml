@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Polska Bez Glutenu - Strona główna
+    url: https://polskabezglutenu.pl
+    about: Odwiedź naszą stronę główną, aby zobaczyć mapę miejsc bezglutenowych w Polsce.
+  - name: Polska Bez Glutenu - Dokumentacja
+    url: https://github.com/aetas/polskabezglutenu/blob/master/README.md
+    about: Zapoznaj się z projektem, jeśli chcesz dowiedzieć się więcej o jego rozwoju.
