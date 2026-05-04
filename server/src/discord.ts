@@ -34,12 +34,29 @@ export async function sendToDiscord(
   type: SubmissionType,
 ): Promise<void> {
   const embedFields = Object.entries(fields)
+    .filter(([key]) => key in FIELD_LABELS)
     .filter(([, value]) => value && value.trim() !== "")
+    .slice(0, 25)
     .map(([key, value]) => ({
-      name: FIELD_LABELS[key] || key,
+      name: FIELD_LABELS[key].slice(0, 256),
       value: value.length > 1024 ? value.slice(0, 1021) + "..." : value,
       inline: value.length < 50,
     }));
+
+  const totalLength = embedFields.reduce(
+    (sum, f) => sum + f.name.length + f.value.length,
+    0,
+  );
+  if (totalLength > 6000) {
+    while (embedFields.length > 1) {
+      embedFields.pop();
+      const newTotal = embedFields.reduce(
+        (sum, f) => sum + f.name.length + f.value.length,
+        0,
+      );
+      if (newTotal <= 6000) break;
+    }
+  }
 
   const payload = {
     embeds: [
