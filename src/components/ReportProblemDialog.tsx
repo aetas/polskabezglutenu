@@ -95,7 +95,7 @@ export function ReportProblemDialog({ open, onOpenChange }: ReportProblemDialogP
         onOpenChange(v);
       }}
     >
-      <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-lg">
+      <DialogContent className="sm:max-w-lg">
         <DialogHeader>
           <DialogTitle>Zgłoś problem z danymi</DialogTitle>
           <DialogDescription>
@@ -114,7 +114,7 @@ export function ReportProblemDialog({ open, onOpenChange }: ReportProblemDialogP
             </Button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4 pb-4">
             <div className="hidden" aria-hidden="true">
               <input
                 type="text"
